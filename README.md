@@ -6,8 +6,11 @@ TPs Kubernetes - ESIEA S7 DevOps 2026
 
 ```
 .
-├── tp2/                    # TP2
+├── tp2/                    # TP2 - Monster App
 │   └── monster_app_k8s/
+├── tp3/                    # TP3 - Autoscaling
+│   ├── deployment.yml
+│   └── infinite-calls.yml
 └── ...
 ```
 
@@ -16,6 +19,7 @@ TPs Kubernetes - ESIEA S7 DevOps 2026
 | TP | Thème | Description |
 |----|-------|-------------|
 | [TP2](tp2/) | Déploiement complet | Déployer une application multi-conteneurs avec Services, Kustomization et Ingress |
+| [TP3](tp3/) | Autoscaling (HPA) | Mettre en place l'autoscaling horizontal basé sur les métriques CPU |
 
 ## Prérequis
 
