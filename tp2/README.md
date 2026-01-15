@@ -18,7 +18,7 @@ Déploiement de la stack **Monster App** sur Kubernetes avec Minikube.
 | Service | Image | Port | Replicas | Type |
 |---------|-------|------|----------|------|
 | monstericon | tecpi/monster_icon:0.1 | 9090 | 5 | LoadBalancer |
-| dnmonster | amouat/dnmonster:1.0 | 8080 | 5 | ClusterIP |
+| dnmonster | amouat/dnmonster:1.1 | 8080 | 5 | ClusterIP |
 | redis | redis:latest | 6379 | 1 | ClusterIP |
 
 ## Structure des fichiers
