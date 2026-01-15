@@ -11,6 +11,11 @@ TPs Kubernetes - ESIEA S7 DevOps 2026
 ├── tp3/                    # TP3 - Autoscaling
 │   ├── deployment.yml
 │   └── infinite-calls.yml
+├── tp4/                    # TP4 - WordPress
+│   ├── kustomization.yaml
+│   ├── database.yaml
+│   ├── app.yaml
+│   └── autoscaling.yaml
 └── ...
 ```
 
@@ -20,6 +25,7 @@ TPs Kubernetes - ESIEA S7 DevOps 2026
 |----|-------|-------------|
 | [TP2](tp2/) | Déploiement complet | Déployer une application multi-conteneurs avec Services, Kustomization et Ingress |
 | [TP3](tp3/) | Autoscaling (HPA) | Mettre en place l'autoscaling horizontal basé sur les métriques CPU |
+| [TP4](tp4/) | WordPress Production | WordPress + MySQL avec Kustomization, Secrets, PVC et HPA (2-5 replicas) |
 
 ## Prérequis
 

@@ -1,0 +1,18 @@
+resources:
+  - database.yaml
+  - app.yaml
+  - autoscaling.yaml
+  - ingress.yaml
+
+secretGenerator:
+  - name: mysql-secrets
+    literals:
+      - MYSQL_ROOT_PASSWORD=bateau
+      - MYSQL_DATABASE=wordpress_db
+      - MYSQL_USER=wordpress_user
+      - MYSQL_PASSWORD=bateau
+  - name: wordpress-secrets
+    literals:
+      - WORDPRESS_USERNAME=admin
+      - WORDPRESS_PASSWORD=bateau
+      - WORDPRESS_EMAIL=wordpress@email.com
