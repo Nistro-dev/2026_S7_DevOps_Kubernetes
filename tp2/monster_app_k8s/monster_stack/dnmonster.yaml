@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dnmonster
+  labels:
+    app: monsterstack
+spec:
+  ports:
+    - port: 8080
+  selector:
+    app: monsterstack
+    partie: dnmonster
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dnmonster
+  labels:
+    app: monsterstack
+spec:
+  selector:
+    matchLabels:
+      app: monsterstack
+      partie: dnmonster
+  strategy:
+    type: Recreate
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: monsterstack
+        partie: dnmonster
+    spec:
+      containers:
+        - name: dnmonster
+          image: amouat/dnmonster:1.0
+          ports:
+            - containerPort: 8080

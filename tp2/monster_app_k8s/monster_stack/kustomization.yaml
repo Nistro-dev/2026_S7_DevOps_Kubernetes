@@ -1,0 +1,5 @@
+resources:
+  - monstericon.yaml
+  - dnmonster.yaml
+  - redis.yaml
+  - monster-ingress.yaml
