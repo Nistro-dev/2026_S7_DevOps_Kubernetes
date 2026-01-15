@@ -19,6 +19,7 @@ metadata:
   labels:
     app: monsterstack
 spec:
+  replicas: 5
   selector:
     matchLabels:
       app: monsterstack
