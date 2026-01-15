@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
         - name: dnmonster
-          image: amouat/dnmonster:1.1
+          image: amouat/dnmonster:1.0
           ports:
             - containerPort: 8080
